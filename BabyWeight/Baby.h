@@ -3,40 +3,41 @@
 
 using namespace std;
 
-// class that contains information related to a single birth or baby name
+// class that contains information related to a single name and its birth count
 class Baby {
 public:
 	Baby() {  // default constructor
-		weight = 0;
 		next = nullptr;
+		count = 0;
 	};
 
-	Baby(string s, int w) { // constructor
-		name = s;
-		weight = w;
+	Baby(const string & n) { // constructor
+		name = n;
+		count = 1;
 		next = nullptr;
 	}
 
 	Baby(const Baby & b)
 	{
 		name = b.name;
-		weight = b.weight;
+		count = b.count;
 		next = nullptr;
 	}
 
 	// a "getter" method
-	int getWeight() {
-		return weight; // TO BE COMPLETED
+	int addCount()
+	{
+		count++;
 	}
 
 	// a "getter" method
 	const string & getName() {
-		return name; // TO BE COMPLETED
+		return name;
 	}
 
 private:
 	string name;
-	int weight;
+	int count;
 	Baby * next;
 
 	friend class MedicalRecord;
