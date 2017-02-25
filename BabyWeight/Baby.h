@@ -7,23 +7,37 @@ using namespace std;
 class Baby {
 public:
 	Baby() {  // default constructor
+		weight = 0;
+		next = nullptr;
 	};
 
 	Baby(string s, int w) { // constructor
-		// TO BE COMPLETED
+		name = s;
+		weight = w;
+		next = nullptr;
+	}
+
+	Baby(const Baby & b)
+	{
+		name = b.name;
+		weight = b.weight;
+		next = nullptr;
 	}
 
 	// a "getter" method
 	int getWeight() {
-		return -1; // TO BE COMPLETED
+		return weight; // TO BE COMPLETED
 	}
 
 	// a "getter" method
-	string getName() {
-		return "COMPLETE ME"; // TO BE COMPLETED
+	const string & getName() {
+		return name; // TO BE COMPLETED
 	}
 
 private:
 	string name;
 	int weight;
+	Baby * next;
+
+	friend class MedicalRecord;
 };

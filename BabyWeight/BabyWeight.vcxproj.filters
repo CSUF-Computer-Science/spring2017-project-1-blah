@@ -26,6 +26,9 @@
     <ClInclude Include="MedicalRecord.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Name.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="baby_data_large.txt" />
