@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClInclude Include="Baby.h" />
     <ClInclude Include="MedicalRecord.h" />
+    <ClInclude Include="Name.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="baby_data_large.txt" />
