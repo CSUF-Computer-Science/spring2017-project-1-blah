@@ -15,27 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include=".travis.yml" />
-    <None Include="critic" />
-    <None Include="README.md" />
+    <None Include="..\.travis.yml" />
+    <None Include="..\critic" />
+    <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Baby.h">
+    <ClInclude Include="..\Baby.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MedicalRecord.h">
+    <ClInclude Include="..\MedicalRecord.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Name.h">
+    <ClInclude Include="..\Name.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="baby_data_large.txt" />
-    <Text Include="baby_data_small.txt" />
+    <Text Include="..\baby_data_large.txt" />
+    <Text Include="..\baby_data_small.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="..\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

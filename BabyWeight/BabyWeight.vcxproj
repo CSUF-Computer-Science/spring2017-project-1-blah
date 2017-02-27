@@ -18,6 +18,23 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.travis.yml" />
+    <None Include="..\critic" />
+    <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Baby.h" />
+    <ClInclude Include="..\MedicalRecord.h" />
+    <ClInclude Include="..\Name.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\baby_data_large.txt" />
+    <Text Include="..\baby_data_small.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8ACE32B2-F180-4960-B899-8B43A080A08F}</ProjectGuid>
     <RootNamespace>BabyWeight</RootNamespace>
@@ -109,23 +126,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <None Include=".travis.yml" />
-    <None Include="critic" />
-    <None Include="README.md" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Baby.h" />
-    <ClInclude Include="MedicalRecord.h" />
-    <ClInclude Include="Name.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="baby_data_large.txt" />
-    <Text Include="baby_data_small.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
