@@ -108,6 +108,7 @@ private:
 		count++;
 		namelist->processName(b.name);
 	}
+
 	//$BOOBS: My variables, may tweak later													$BOOBS
 	Baby * head;
 	int count;
